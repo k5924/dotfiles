@@ -1,0 +1,11 @@
+[user]
+	name = k5924
+	email = k.bhatti5384@yahoo.co.uk
+[init]
+	defaultBranch = master
+[commit]
+	template = /home/tr1x/.config/git/.gitmessage
+[core]
+	editor = nvim
+[color]
+	ui = true

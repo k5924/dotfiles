@@ -1,0 +1,33 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/tr1x/.zshrc'
+
+autoload -U compinit; compinit
+# End of lines added by compinstall
+
+pokemon-colorscripts -r
+
+# Source aliases
+source "$ZDOTDIR/zsh-functions"
+
+# Normal files to source
+zsh_add_file zsh-aliases
+
+# Plugins
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+
+eval "$(starship init zsh)"
+
+export PATH="$PATH:/home/tr1x/development/flutter/bin"
+export PATH="$PATH:/home/tr1x/development/polybar-pulseaudio-control/pulseaudio-control.bash"
+export PATH="$PATH:/home/tr1x/development/networkmanager-dmenu-2.1.0"
+export CHROME_EXECUTABLE="/var/lib/flatpak/app/com.brave.Browser/current/active/export/bin/com.brave.Browser"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

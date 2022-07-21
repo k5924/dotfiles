@@ -1,0 +1,15 @@
+/* colors */
+
+* {
+  al:   #00000000;
+  bg:   #02040AFF;
+  bga:  #1C39C733;
+  bar:  #F5F5F5FF;
+  fg:   #c6cae8FF;
+  ac:   #1C39C7FF;
+}
+
+element-text, element-icon {
+	background-color: inherit;
+	text-color: inherit;
+}
